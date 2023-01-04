@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap'); 
+:root{
+    --Dark-cyan:hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    font-family: "Kumbh Sans";
+}
+.main-container{
+    width: 320px;
+    height: 340px;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.first-child{
+    flex: 1 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+.first-row{
+    flex: 1 40%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.second-row{
+    flex: 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.profile-container{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 100px;
+    align-self: center;
+    justify-self: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: aqua;
+}
+.profile-picture{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.second-child{
+   flex: 1 20%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   background-color: white;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.one, .two ,.three{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+    flex-direction: column;
+}
+.amount{
+    font-size: medium;
+    font-weight: 700;
+    align-self: center;
+    color: var(--Very-dark-desaturated-blue);
+}
+.like{
+    font-size: xx-small;
+    font-weight: 400;
+    align-self: center;
+    letter-spacing: 1.2px;
+    color: var(--Dark-gray);
+}
+
+.card-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.title{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+.desc{
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: small;
+}
